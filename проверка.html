@@ -1,0 +1,158 @@
+<html lang="ru">
+<head>
+    <meta charset="UTF-8"><!-- Установка кодировки документа -->
+    <title>Смирнов Артем Сергеевич</title><!-- Заголовок страницы -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- Метатег для адаптивного масштабирования -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"><!-- Метатег для совместимости с Edge -->
+    <meta name="description" content="Краткое описание страницы"> <!-- Метатег для описания страницы -->
+    <style>
+        body {
+            background-color: yellow;/* Цвет фона страницы */
+            font-family: Arial, sans-serif;/* Шрифт текста */
+            font-size: 13pt;/* Размер шрифта */
+        }
+    </style>
+</head>
+<body>
+    Смирнов Артем Сергеевич
+
+    <style>
+        h2 {
+            text-align: center;
+            text-decoration: underline;
+        }
+
+        .group {
+            font-style: italic;
+            color: green;
+            text-decoration: line-through;
+        }
+
+        .course {
+            text-align: center;
+            vertical-align: super;
+        }
+
+        .hobbies {
+            text-align: left;
+            color: blue;
+            font-weight: bold;
+        }
+
+        
+    </style>
+
+<h2>Текст ФИО</h2>
+<p class="group">Группа</p>
+<p class="course">Курс</p>
+<p class="hobbies">Мои увлечения</p>
+
+<a href="#table">Перейти к таблице</a>
+
+
+<ol start="2">
+    <li>Зима</li>
+    <li>Весна</li>
+    <li>Лето</li>
+</ol>
+
+<img src="D:\цветы.jpg" alt="Описание изображения">
+<style>
+    img{
+    width: 120pt;
+    height: 120pt;
+}
+</style>
+
+<style>
+    table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+    
+    th, td {
+        border: 1px solid black; 
+        padding: 8px;
+        vertical-align: top;
+    }
+
+    table tr:first-child th,
+    table tr:last-child td {
+        border-width: 2px;
+        font-weight: bold;
+    }
+    
+    table tr:first-child th:first-child,
+    table tr:last-child td:first-child {
+        border-left-width: 2px;
+    }
+    
+    table tr:first-child th:last-child,
+    table tr:last-child td:last-child {
+        border-right-width: 2px;
+    }
+    table tr:third-child th:first-child{
+        background-color: #000000;
+    }
+    
+</style>
+
+<table id="table">
+<tr>
+    <td rowspan="2">ромашка</td>
+    <td>гвоздика</td> 
+    <td> </td>
+
+</tr>
+<tr>   
+    <td>василек</td> 
+    <td>лилия</td>
+</tr>
+
+<tr>
+    <td colspan="3"> </td>
+</tr>
+
+</table>
+
+<div id="myModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Имя пользователя и пароль</h2>
+      <p>Сервер: 192.168.0.80</p>
+      <p>Сообщение: Protected</p>
+      <form>
+        <label for="username">Имя:</label>
+        <input type="text" id="username" name="username" required><br><br>
+        <label for="password">Пароль:</label>
+        <input type="password" id="password" name="password" required><br><br>
+        <input type="checkbox" id="remember" name="remember">
+        <label for="remember">Запомнить пароль</label><br><br>
+        <button type="submit">Ок</button>
+        <button type="button" class="cancel">Отменить</button>
+      </form>
+    </div>
+  </div>
+  
+  <script>
+    var modal = document.getElementById("myModal");
+    var btn = document.getElementById("myBtn");
+    var span = document.getElementsByClassName("close")[0];
+    btn.onclick = function() {
+      modal.style.display = "block";
+    }
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+  </script>
+
+<a href="mailto:smirnov.artem017019@gmail.com">нажми!!!</a>
+
+
+</body>
+</html>
